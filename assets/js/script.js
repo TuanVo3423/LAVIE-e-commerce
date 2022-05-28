@@ -1,6 +1,7 @@
 
     var searchtemp = 0;
     var temp_name;
+    var temp_menu = 0 ;
     var Modal = document.querySelector('#modal-search')
     var btnSearch = document.getElementById('search')
     var formSearch = document.getElementById('search-tab-down')
@@ -13,6 +14,17 @@
     // var pageNav2 = document.getElementById('Page2');
     // var pageNav3 = document.getElementById('Page3');
     var slidingTagLiAfterStyle = document.createElement("style");
+    var btnMenu = document.querySelector('.menu');
+    var menuTab = document.querySelector('.n1');
+    btnMenu.onclick = function()
+    {
+        menuTab.style.display = 'block'
+        temp_menu++;
+        if(temp_menu%2==0)
+        {
+            menuTab.style.display = 'none'
+        }
+    }
 
     Modal.addEventListener('click' , function()
     {

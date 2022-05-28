@@ -16,6 +16,9 @@
      float: none;
    
  }
+ .menu-icon{
+   display: none;
+ }
  .header__top-title span{
    font-size:12px;
  }

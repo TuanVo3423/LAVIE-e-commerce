@@ -4,6 +4,19 @@
     box-sizing: border-box;
   
   }
+  .n1{
+    display: none;
+  }
+  .n1{
+    position: absolute;
+    top: 100%;
+    right: -21px;
+    width: 50%;
+
+  }
+  .navbar-item{
+    text-align: center;
+  }
   
   body {
     min-height: 100vh;

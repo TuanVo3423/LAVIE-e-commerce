@@ -16,24 +16,27 @@
         <link rel="stylesheet" href="assets/css/helper.css">
         <link rel="stylesheet" href="assets/css/product.css">
   <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/responsive/header.css">
 </head>
 
 <body>
+    <div class="background-dark is-hidden"></div>
+
     <div class="header">
         <div class="header-wrap">
 
             <nav class="navbar">
-                <div class="columns full-width no-margin">
+                <div class="columns full-width no-margin is-mb">
                     <div class="column is-one-quarter padding-top-8">
                         <div class="header__top-nav-icon-left">
                             <ul class="header__top-list-icon">
                                 <li class="header__top-list-icon-item">
-                                    <div class="header__top-list-link" id="search">
+                                    <a href="#" class="header__top-list-link" id="search">
                                         <span class="icon">
                                             <i class="icon-item ph-magnifying-glass"  ></i>
                                         </span>
                                         <span class="title">search</span>
-                                    </div>
+                                    </a>
 
                                 </li>
                                 <li class="header__top-list-icon-item">
@@ -53,13 +56,37 @@
                         <div class="header__top-title">
                             <h1>lavie<sup><span>&#174;</span</sup></h1>
                         </div>
+                        <div class="menu"><i class="ph-list menu-icon"></i></div>
+                        <nav class="navbar n1" role="navigation" aria-label="dropdown navigation">
+                            <div class="navbar-item has-dropdown is-active">
+                              <a  class="navbar-link">
+                                Menu
+                              </a>
+                          
+                              <div class="navbar-dropdown">
+                                <a href="index.html" class="navbar-item">
+                                  HOME
+                                </a>
+                                <a href="category.html" class="navbar-item">
+                                  CATEGORY
+                                </a>
+                                <a href="about.html" class="navbar-item">
+                                  ABOUT US
+                                </a>
+                                <hr class="navbar-divider">
+                                <div class="navbar-item">
+                                  THIS IS LAVIE
+                                </div>
+                              </div>
+                            </div>
+                          </nav>
                     </div>
 
                     <div class="column is-one-quarter padding-top-8">
                         <div class="header__top-nav-icon header__top-nav-icon-right">
                             <ul class="header__top-list-icon">
                                 <li class="header__top-list-icon-item">
-                                    <a href="" class="header__top-list-link">
+                                    <a href="login.html" class="header__top-list-link">
                                         <span class="icon">
                                             <i class="icon-item ph-sign-in"></i>
                                         </span>
@@ -84,7 +111,7 @@
             </nav>
             <nav class="navbar navbar-buttom center">
                 <div class="columns full-width no-margin">
-                    <div class="column  column-no-padding center">
+                    <div class="column column-no-padding center">
 
                         <ul class="header__nav-list ">
                             <li class="header__nav-list-item header__nav-list-item-type1 header__nav-list-item-slap">
@@ -145,80 +172,6 @@
         </div>
         <!-- nav bottom -->
         <div class="navPage" id="Page">
-
-
-            <div class="navPage-items">
-                <div class="columns no-margin full-height">
-                    <div class="column is-half no-margin is-flex is-flex-direction-row">
-                        <div class="column is-one-third">
-                            <ul class="list-item-page">
-                                <li class="item-page-header"><p class="item-label-link font-title">By category</p></li>
-                                <li class="item-page"><a href="" class="item-label-link">Bestsellers</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Lock & Lock</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Starbucks</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Carlman</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">More</a></li>
-
-                            </ul>
-                        </div>
-
-
-                    </div>
-
-                    <div class="column is-half no-margin is-flex is-flex-direction-column">
-                        <div class="collection font-title"><p class="collection-title">Collections</p></div>
-                        <div class="collection-list-img">
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navPage" id="Page1">
-
-
-            <div class="navPage-items">
-                <div class="columns no-margin full-height">
-                    <div class="column is-half no-margin is-flex is-flex-direction-row">
-                        <div class="column is-one-third">
-                            <ul class="list-item-page">
-                                <li class="item-page-header"><p class="item-label-link font-title">By category</p></li>
-                                <li class="item-page"><a href="" class="item-label-link">Bestsellers</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Bamboo</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Canvas</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Disposable nilon</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">More</a></li>
-
-                            </ul>
-                        </div>
-
-
-                    </div>
-
-                    <div class="column is-half no-margin is-flex is-flex-direction-column">
-                        <div class="collection font-title"><p class="collection-title">Collections</p></div>
-                        <div class="collection-list-img">
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navPage" id="Page2">
-
-
             <div class="navPage-items">
                 <div class="columns no-margin full-height">
                     <div class="column is-half no-margin is-flex is-flex-direction-row">
@@ -229,7 +182,6 @@
                                 <li class="item-page"><a href="" class="item-label-link">Glass bottles</a></li>
                                 <li class="item-page"><a href="" class="item-label-link">Cups</a></li>
                                 <li class="item-page"><a href="" class="item-label-link">More</a></li>
-
                             </ul>
                         </div>
 
@@ -239,45 +191,10 @@
                     <div class="column is-half no-margin is-flex is-flex-direction-column">
                         <div class="collection font-title"><p class="collection-title">Collections</p></div>
                         <div class="collection-list-img">
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navPage" id="Page3">
-
-
-            <div class="navPage-items">
-                <div class="columns no-margin full-height">
-                    <div class="column is-half no-margin is-flex is-flex-direction-row">
-                        <div class="column is-one-third">
-                            <ul class="list-item-page">
-                                <li class="item-page-header"><p class="item-label-link font-title">About Lavie</p></li>
-                                <li class="item-page"><a href="" class="item-label-link">Find us</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Who are we</a></li>
-                                <li class="item-page"><a href="" class="item-label-link">Feedback</a></li>
-
-
-                            </ul>
-                        </div>
-
-
-                    </div>
-
-                    <div class="column is-half no-margin is-flex is-flex-direction-column">
-                        <div class="collection font-title"><p class="collection-title">Collections</p></div>
-                        <div class="collection-list-img">
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
-                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="assets/img/chai/chai1.png" />
+                            <img class="collection-img" src="assets/img/cocbamia/cocbamia1.jpg" />
+                            <img class="collection-img" src="assets/img/ly/ly1.jpg" />
+                            <img class="collection-img" src="assets/img/túi/túi gai dầu/túi gai dầu.png" />
                             <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
                         </div>
 
@@ -300,7 +217,6 @@
 
 
     </div>
-  
 
   <!--     main -->
   <div class="login-wrap">
@@ -378,8 +294,9 @@
     </div>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-  <script src="script.js"></script>
-  <script src="login.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/login.js"></script>
   <script>
   bulmaCarousel.attach('#slider', {
   slidesToScroll: 1,

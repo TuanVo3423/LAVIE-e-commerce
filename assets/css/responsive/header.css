@@ -1,0 +1,81 @@
+/* PC */
+@media (min-width: 1024px)
+{
+    .menu-icon{
+        display: none !important;
+    }
+    .n1{
+        display: none !important;
+    }
+    
+} 
+/* Tablet and mobile */
+@media (max-width : 1023px)
+{
+    
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width : 1023px)
+{
+    .menu-icon{
+        display: none;
+    }
+    .n1{
+        display: none !important;
+    }
+}
+@media (max-width : 739px)
+{
+    .header__top-list-icon{
+        display: none;
+    }
+    .navbar-buttom{
+        display: none;
+    }
+    .column .padding-top-8{
+        display: none;
+    }
+    .common_max-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .twin-tout .tout{
+        width: 100%;
+    }
+    .list-item .list-item-common{
+        flex-direction: column;
+        
+    }
+    .product-item-common{
+        width: 100%;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+        position: relative;
+        font-weight: 900;
+        top: 28px;
+        right: 10px
+    }
+    
+    /* .header__nav-list {
+        display: none;
+    }
+    .header__top-title{
+        margin: 0;
+    }
+    .header-wrap{
+        margin: 0;
+    }
+    .header__top-nav-icon-left{
+        margin: 0;
+    }
+    .is-mb{
+        flex-direction: column;
+    }
+    .title-center{
+        display: inline-flex;
+    } */
+        
+    
+} 
