@@ -1,0 +1,141 @@
+/* Nav cart */
+.nav-cart {
+    min-width: 400px;
+    width: 400px;
+    height: 700px;
+    /* background-color: black; */
+  
+    padding: 1rem;
+    color: black;
+    background-color: white;
+  
+    position: fixed;
+    right: 0;
+    top: 128px;
+    z-index: 100;
+  }
+  
+  .nav-cart>* {
+    margin: 1rem 0;
+  }
+  
+  .nav-cart-toplink {
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .nav-cart-toplink a {
+    color: inherit;
+  }
+  
+  .nav-cart-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-cart-header h3 {
+    font-weight: bold;
+  }
+  
+  .nav-cart-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-cart-list-item {
+    display: flex;
+  }
+  
+  .nav-cart-list-item .item-image-wrapper {
+    width: 100px;
+  }
+  
+  .nav-cart-list-item .item-image {
+    position: relative;
+    display: block;
+  
+    width: 100%;
+    padding-top: 100%;
+  
+    overflow: hidden;
+  }
+  
+  .nav-cart-list-item .item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .nav-cart-list-item .item-content {
+    flex-grow: 1;
+    padding-left: 1rem;
+  }
+  
+  .nav-cart-list-item .item-content>*:not(:first-child) {
+    margin: 6px 0;
+  }
+  
+  .nav-cart-list-item .item-name {
+    font-weight: 600;
+  }
+  
+  .nav-cart-list-item .item-description {
+    font-size: 12px;
+  }
+  
+  .nav-cart-list-item .item-option {
+    display: flex;
+    ;
+    justify-content: space-between;
+  }
+  
+  .nav-cart-list-item .item-amount {
+    padding: 2px 4px;
+  
+    border: 1px solid #c2c2c2;
+  }
+  
+  .nav-cart-list-item .item-amount>span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: center;
+    text-align: center;
+  
+    cursor: pointer;
+  }
+  
+  .nav-cart-list-item .item-remove {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .nav-cart-list-item .item-price {
+    font-weight: 600;
+  }
+  
+  .nav-cart-total {
+    display: flex;
+    justify-content: space-between;
+  
+    font-weight: 600;
+  }
+  
+  .nav-cart-checkout {
+    padding: 0.5rem 1rem;
+  }
+  
+  

@@ -1,0 +1,151 @@
+
+.login-wrap{
+    margin-top: 128px;
+}
+.main-login{
+    padding: 60px 48px;
+    max-width: 100%;
+    margin: 0;
+    background-color: #ebfbee;
+    /* background-image: url(https://cdn11.bigcommerce.com/s-1vmlni8o2p/product_images/uploaded_images/circle-bk.png); */
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+}
+.login-common-container{
+    text-align: center;
+}
+.new-account{
+    background-color: #fff;
+    padding: 90px 82px;
+    width: 47.5%;
+    text-align: center;
+    margin: 0 2% 0 2%;
+}
+.panel-account{
+    height: 287.8px;
+    position: relative;
+}
+.panel-header{
+    background-color: transparent;
+    padding: 0;
+}
+.panel-header h3{
+    margin-bottom: 12px;
+}
+.panel-header .new-account-intro{
+    margin-bottom: 18px;
+}
+.panel-body{
+    background-color: transparent;
+}
+.new-account-list{
+    padding: 20px 0;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+.new-account-list::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #8cd0e3;
+    background: linear-gradient(to right,#8cd0e3 0,#f08ccd 100%);
+}
+.new-account-list::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #8cd0e3;
+    background: linear-gradient(to right,#8cd0e3 0,#f08ccd 100%);
+}
+.product-form-register{
+    margin: 0;
+    width: 31%;
+    padding: 20px 0;
+}
+.panel-body-form-password,
+.panel-body-form-email{
+    display: block;
+    margin: 0 0 2rem;
+    max-width: none;
+}.panel-body-form-password-input,
+.panel-body-form-email-input{
+    background-color: #fff;
+    border-color: #e31c79;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #666;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 15px;
+    transition: border-color .1s ease-out;
+    width: 100%;
+}
+.form-field--error .panel-body-form-email-input{
+    border-color: #e31c79;
+    float: none;
+}
+.form-field--error .panel-body-form-password-input{
+    border-color: #e31c79;
+    float: none;
+}
+.form-field--error .Login--error-mess-email,
+.form-field--error .Login--error-mess-password{
+    color: #e31c79;
+}
+.Login--error-mess-password,
+.Login--error-mess-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0.35714rem 0 -0.5rem;
+    width: 100%;
+    display: none;
+}
+.forgot-password{
+    font-size: 16px;
+    color: #000;
+    text-decoration: underline;
+    display: block;
+    margin: 17px 0 0 0;
+}
+/* .new-account-register{
+    color: #fff;
+    outline: 0;
+    background: 0 0!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 3px 3px 0 #f5ea77;
+    text-transform: uppercase;
+    line-height: 2;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .5s;
+    z-index: 1;
+}
+.new-account-register::before{
+    background: #8cd0e3;
+    z-index: -2;
+    transform: translate3D(0,0,0);
+}
+.new-account-register::after{
+    width: 200%;
+    transform-origin: 0 bottom;
+    transform: translate3D(-50%,0,0) rotate(-50deg);
+} */

@@ -1,0 +1,36 @@
+/* start common product */
+.common-category-wrap {
+    background-color: #d3f9d8;
+  }
+  
+  .product-main-common {
+    padding: 0;
+    margin-top: 50px;
+    margin: 0 15px;
+  }
+  
+  .product-container-common {
+    margin: 0;
+    margin-top: 20px;
+  }
+  
+  .list-item-common {
+    background-color: #d3f9d8;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-item-common {
+    background-color: #d3f9d8;
+    width: 23.5%;
+    margin: 8px;
+  }
+  
+  .product-item-img-common {
+    border-radius: 50%;
+    height: 266px;
+    margin: 0;
+    background-size: cover;
+  }
+  
+  /* end common product */

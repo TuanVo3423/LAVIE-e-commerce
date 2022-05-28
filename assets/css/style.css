@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .background-dark {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .main {
+    margin-top: 128px;
+  }
+  
+  

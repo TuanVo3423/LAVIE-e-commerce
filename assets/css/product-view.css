@@ -1,0 +1,35 @@
+.product-view {
+
+}
+
+.product-view .product-view-content > div {
+    margin-bottom: 1rem;
+}
+
+.product-view .product-amount {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 1px solid #c2c2c2;
+    height: 35px;
+    width: 100px;
+}
+
+.product-view .product-amount > *  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-view .product-amount > span  {
+    cursor: default;
+}
+
+.product-view .product-amount > button {
+    background: inherit;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <!-- Bulma css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Bulma Carousel css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <!-- icon -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav-cart.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/helper.css">
+    <link rel="stylesheet" href="assets/css/category.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="background-dark is-hidden"></div>
+
+    <div class="header">
+        <div class="header-wrap">
+
+            <nav class="navbar">
+                <div class="columns full-width no-margin">
+                    <div class="column is-one-quarter padding-top-8">
+                        <div class="header__top-nav-icon-left">
+                            <ul class="header__top-list-icon">
+                                <li class="header__top-list-icon-item">
+                                    <div class="header__top-list-link" id="search">
+                                        <span class="icon">
+                                            <i class="icon-item ph-magnifying-glass"  ></i>
+                                        </span>
+                                        <span class="title">search</span>
+                                    </div>
+
+                                </li>
+                                <li class="header__top-list-icon-item">
+                                    <a href="" class="header__top-list-link">
+                                        <span class="icon">
+                                            <i class="icon-item ph-map-pin"></i>
+                                        </span>
+                                        <span class="title">find us</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column title-center column-no-padding">
+                        <div class="header__top-title">
+                            <h1>lavie<sup><span>&#174;</span</sup></h1>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-quarter padding-top-8">
+                        <div class="header__top-nav-icon header__top-nav-icon-right">
+                            <ul class="header__top-list-icon">
+                                <li class="header__top-list-icon-item">
+                                    <a href="login.html" class="header__top-list-link">
+                                        <span class="icon">
+                                            <i class="icon-item ph-sign-in"></i>
+                                        </span>
+                                        <span class="title">login</span>
+                                    </a>
+
+                                </li>
+                                <li class="nav-cart-button header__top-list-icon-item">
+                                    <a href="" class="header__top-list-link">
+                                        <span class="icon">
+                                            <i class="icon-item ph-handbag"></i>
+                                            <span class="icon-bag-decorate">0</span>
+                                        </span>
+                                        <span class="title">bag</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-buttom center">
+                <div class="columns full-width no-margin">
+                    <div class="column  column-no-padding center">
+
+                        <ul class="header__nav-list ">
+                            <li class="header__nav-list-item header__nav-list-item-type1 header__nav-list-item-slap">
+                                <a href="index.html" class="header__nav-item-link">
+                                    <span>
+                                        HOME
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li class="header__nav-list-item  header__nav-list-item-slap">
+                                <a href="" class="header__nav-item-link">
+                                    <p class="header__nav-item-link-slaps">
+                                        /
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="header__nav-list-item header__nav-list-item-type2">
+                                <a href="category.html" class="header__nav-item-link">
+                                    <span>
+                                        CATEGORY
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__nav-list-item header__nav-list-item-slap">
+                                <a href="" class="header__nav-item-link">
+                                    <p class="header__nav-item-link-slaps">
+                                        /
+                                    </p>
+                                </a>
+                            </li>
+                            
+                            <li class="header__nav-list-item header__nav-list-item-type4">
+                                <a href="about.html" class="header__nav-item-link">
+                                    <span>
+                                        ABOUT US
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__nav-list-item header__nav-list-item-slap">
+                                <a href="" class="header__nav-item-link">
+                                    <p class="header__nav-item-link-slaps">
+                                        /
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="header__nav-list-item header__nav-list-item-type5">
+                                <a href="" class="header__nav-item-link">
+                                    <span>
+                                        This is Lavie
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- nav bottom -->
+        <div class="navPage" id="Page">
+
+
+            <div class="navPage-items">
+                <div class="columns no-margin full-height">
+                    <div class="column is-half no-margin is-flex is-flex-direction-row">
+                        <div class="column is-one-third">
+                            <ul class="list-item-page">
+                                <li class="item-page-header"><p class="item-label-link font-title">By category</p></li>
+                                <li class="item-page"><a href="" class="item-label-link">Bestsellers</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Lock & Lock</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Starbucks</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Carlman</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">More</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="column is-half no-margin is-flex is-flex-direction-column">
+                        <div class="collection font-title"><p class="collection-title">Collections</p></div>
+                        <div class="collection-list-img">
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navPage" id="Page1">
+
+
+            <div class="navPage-items">
+                <div class="columns no-margin full-height">
+                    <div class="column is-half no-margin is-flex is-flex-direction-row">
+                        <div class="column is-one-third">
+                            <ul class="list-item-page">
+                                <li class="item-page-header"><p class="item-label-link font-title">By category</p></li>
+                                <li class="item-page"><a href="" class="item-label-link">Bestsellers</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Bamboo</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Canvas</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Disposable nilon</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">More</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="column is-half no-margin is-flex is-flex-direction-column">
+                        <div class="collection font-title"><p class="collection-title">Collections</p></div>
+                        <div class="collection-list-img">
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navPage" id="Page2">
+
+
+            <div class="navPage-items">
+                <div class="columns no-margin full-height">
+                    <div class="column is-half no-margin is-flex is-flex-direction-row">
+                        <div class="column is-one-third">
+                            <ul class="list-item-page">
+                                <li class="item-page"><a href="" class="item-label-link">Tooth Brushes</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Straws</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Glass bottles</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Cups</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">More</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="column is-half no-margin is-flex is-flex-direction-column">
+                        <div class="collection font-title"><p class="collection-title">Collections</p></div>
+                        <div class="collection-list-img">
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navPage" id="Page3">
+
+
+            <div class="navPage-items">
+                <div class="columns no-margin full-height">
+                    <div class="column is-half no-margin is-flex is-flex-direction-row">
+                        <div class="column is-one-third">
+                            <ul class="list-item-page">
+                                <li class="item-page-header"><p class="item-label-link font-title">About Lavie</p></li>
+                                <li class="item-page"><a href="" class="item-label-link">Find us</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Who are we</a></li>
+                                <li class="item-page"><a href="" class="item-label-link">Feedback</a></li>
+
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="column is-half no-margin is-flex is-flex-direction-column">
+                        <div class="collection font-title"><p class="collection-title">Collections</p></div>
+                        <div class="collection-list-img">
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <img class="collection-img" src="https://picsum.photos/200/300" />
+                            <a class="collection-icon-plus__link" href=""><i class="collection-icon-plus ph-plus-circle"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-search">
+            <div class="search-dropdown" id="search-tab-down">
+                <div class="column is-half is-offset-one-quarter is-primary is-flex center">
+                    <form action="" class="search-form">
+                        <input type="text" class="search-form__input" placeholder="Search the store">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- End header -->
+
+    <div class="main">
+        <!-- Hero -->
+        <section class="hero" style="height: auto; background-color: #ebfbee;">
+            <div class="hero-body">
+                <div class="level">
+                    <div class="level-left is-flex-direction-column is-align-items-flex-start" style="flex-basis: 60%">
+                        <p class="is-size-3 has-text-weight-bold">
+                            SKIN LOVE
+                        </p>
+                        <p class="is-size-6">
+                            Show your skin some love with our lineup of ultra-hydrating, brightening and skin-smoothing
+                            faves for a happy, healthy, glowing complexion.
+                        </p>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <figure class="image is-4by3" style="width: 300px">
+                                <img src="assets/img/banner-2.jpeg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End hero -->
+
+        <!-- Category -->
+        <section class="category pl-4 pr-6 pt-4">
+            <div class="is-flex is-flex-direction-row-reverse my-5">
+                <div class="filter-category-wrapper dropdown has-cursor-pointer">
+                    <div class="filter-category dropdown-trigger py-2 is-flex is-justify-content-space-between">
+                        <span>SORT</span>
+                        <span>
+                            <i class="dropdown-up ph-caret-up"></i>
+                            <i class="dropdown-down ph-caret-down is-hidden"></i>
+                        </span>
+                    </div>
+                    <div class="dropdown-menu full-width p-0" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content filter-category-content">
+                            <a href="#" class="dropdown-item item-active">
+                                Dropdown item
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <!-- Sidebar -->
+                <div class="column is-3">
+                    <div>
+                        <ul class="sidebar">
+                            <li class="sidebar-item is-flex is-flex-direction-column">
+                                <span class="item-title is-uppercase is-size-6 is-flex is-justify-content-space-between has-cursor-pointer">Tooth Brushes</span>
+                                <div class="item-collapse">
+                                    <ul class="is-size-6 pl-5 py-2">
+                                        <li>
+                                            <a href="#">Tooth Brushes</a>
+                                        </li>
+                                        <li><a href="#">Cleansers</a></li>
+                                        <li><a href="#">Toners</a></li>
+                                        <li><a href="#">Face Mask</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-item is-flex is-flex-direction-column">
+                                <span class="item-title is-uppercase is-size-6 is-flex is-justify-content-space-between has-cursor-pointer">Straws</span>
+                                <div class="item-collapse">
+                                    <ul class="is-size-6 pl-5 py-2">
+                                        <li>
+                                            <a href="#">Bestsellers</a>
+                                        </li>
+                                        <li><a href="#">Cleansers</a></li>
+                                        <li><a href="#">Toners</a></li>
+                                        <li><a href="#">Face Mask</a></li>
+                                    </ul>
+                                </div>
+                            </li>                            <li class="sidebar-item is-flex is-flex-direction-column">
+                                <span class="item-title is-uppercase is-size-6 is-flex is-justify-content-space-between has-cursor-pointer">Glass bottles</span>
+                                <div class="item-collapse">
+                                    <ul class="is-size-6 pl-5 py-2">
+                                        <li>
+                                            <a href="#">Bestsellers</a>
+                                        </li>
+                                        <li><a href="#">Cleansers</a></li>
+                                        <li><a href="#">Toners</a></li>
+                                        <li><a href="#">Face Mask</a></li>
+                                    </ul>
+                                </div>
+                            </li>                            <li class="sidebar-item is-flex is-flex-direction-column">
+                                <span class="item-title is-uppercase is-size-6 is-flex is-justify-content-space-between has-cursor-pointer">Cups</span>
+                                <div class="item-collapse">
+                                    <ul class="is-size-6 pl-5 py-2">
+                                        <li>
+                                            <a href="#">Bestsellers</a>
+                                        </li>
+                                        <li><a href="#">Cleansers</a></li>
+                                        <li><a href="#">Toners</a></li>
+                                        <li><a href="#">Face Mask</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="column is-9">
+                    <div class="category-product-wrapper columns is-flex-wrap-wrap">
+                        <div class="column is-4">
+                            <div class="category-product is-flex is-flex-direction-column is-align-items-center">
+                                <figure class="image is-3by4 full-width">
+                                    <a href="#">
+                                        <img src="/assets/img/ban chay/bot rom/botrom1.jpg"
+                                            alt="">
+                                        <img class="image-background"
+                                            src="assets/img/ban chay/go/go1.jpg"
+                                            alt="">
+                                    </a>
+                                    <div class="category-product-quick-view is-invisible">
+                                        <a href="#" class="button is-uppercase is-size-7 has-text-weight-bold">Quick
+                                            view</a>
+                                    </div>
+
+                                </figure>
+
+                                <div class="category-product-body has-text-centered full-width mt-2">
+                                    <div class="category-product-rate mb-1">
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                    </div>
+                                    <p class="has-text-weight-bold mb-1">Block star</p>
+                                    <p class="is-size-7 mb-2">Mineral Daily Sunsceen</p>
+                                    <div class="mb-3">
+                                        <button class="button is-small">0.4 fl oz</button>
+                                        <button class="button is-small">1.4 fl oz</button>
+                                    </div>
+                                    <button class="color-button">
+                                        <span class="color-button-text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="category-product is-flex is-flex-direction-column is-align-items-center">
+                                <figure class="image is-3by4 full-width">
+                                    <a href="#">
+                                        <img src="assets/img/ly/ly1.jpg"
+                                            alt="">
+                                        <img class="image-background"
+                                            src="assets/img/ly/ly2.jpg"
+                                            alt="">
+                                    </a>
+                                    <div class="category-product-quick-view is-invisible">
+                                        <a href="#" class="button is-uppercase is-size-7 has-text-weight-bold">Quick
+                                            view</a>
+                                    </div>
+
+                                </figure>
+
+                                <div class="category-product-body has-text-centered full-width mt-2">
+                                    <div class="category-product-rate mb-1">
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                    </div>
+                                    <p class="has-text-weight-bold mb-1">Block star</p>
+                                    <p class="is-size-7 mb-2">Mineral Daily Sunsceen</p>
+                                    <div class="mb-3">
+                                        <button class="button is-small">0.4 fl oz</button>
+                                        <button class="button is-small">1.4 fl oz</button>
+                                    </div>
+                                    <button class="color-button">
+                                        <span class="color-button-text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="category-product is-flex is-flex-direction-column is-align-items-center">
+                                <figure class="image is-3by4 full-width">
+                                    <a href="#">
+                                        <img src="assets/img/túi/Túi polyester/Túi polyester.png"
+                                            alt="">
+                                        <img class="image-background"
+                                            src="assets/img/túi/Túi vải tái chế PET/Túi vải tái chế PET.png"
+                                            alt="">
+                                    </a>
+                                    <div class="category-product-quick-view is-invisible">
+                                        <a href="#" class="button is-uppercase is-size-7 has-text-weight-bold">Quick
+                                            view</a>
+                                    </div>
+
+                                </figure>
+
+                                <div class="category-product-body has-text-centered full-width mt-2">
+                                    <div class="category-product-rate mb-1">
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                    </div>
+                                    <p class="has-text-weight-bold mb-1">Block star</p>
+                                    <p class="is-size-7 mb-2">Mineral Daily Sunsceen</p>
+                                    <div class="mb-3">
+                                        <button class="button is-small">0.4 fl oz</button>
+                                        <button class="button is-small">1.4 fl oz</button>
+                                    </div>
+                                    <button class="color-button">
+                                        <span class="color-button-text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="category-product is-flex is-flex-direction-column is-align-items-center">
+                                <figure class="image is-3by4 full-width">
+                                    <a href="#">
+                                        <img src="assets/img/túi/túi vải/túi vải 1.png"
+                                            alt="">
+                                        <img class="image-background"
+                                            src="assets/img/túi/túi vải/túi vải 2.png"
+                                            alt="">
+                                    </a>
+                                    <div class="category-product-quick-view is-invisible">
+                                        <a href="#" class="button is-uppercase is-size-7 has-text-weight-bold">Quick
+                                            view</a>
+                                    </div>
+
+                                </figure>
+
+                                <div class="category-product-body has-text-centered full-width mt-2">
+                                    <div class="category-product-rate mb-1">
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                        <i class="product-item-rate ph-heart"></i>
+                                    </div>
+                                    <p class="has-text-weight-bold mb-1">Block star</p>
+                                    <p class="is-size-7 mb-2">Mineral Daily Sunsceen</p>
+                                    <div class="mb-3">
+                                        <button class="button is-small">0.4 fl oz</button>
+                                        <button class="button is-small">1.4 fl oz</button>
+                                    </div>
+                                    <button class="color-button">
+                                        <span class="color-button-text">add to cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="pagination is-small mt-4 mb-6">
+                        <ul class="pagination-list is-justify-content-center">
+                            <li><a class="pagination-link is-current">1</a></li>
+                            <li><a class="pagination-link">2</a></li>
+                            <li><a class="pagination-link">3</a></li>
+                            <li><a class="pagination-link">4</a></li>
+                            <li><a class="pagination-link">5</a></li>
+                        </ul>
+                        <a class="pagination-next">Next ></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- end category -->
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-wrap">
+        <div class="footer">
+            <div class="is-flex is-justify-content-center is-align-items-center is-flex-direction-column has-text-centered has-text-weight-semibold">
+                <p>Copyright © 2022 - Trường Đại học Công nghệ Thông tin & Truyền Thông Việt - Hàn, Đại học Đà Nẵng</p>
+                <p>Địa chỉ: 470 Đường Trần Đại Nghĩa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng</p>
+                <figure class="image mt-4" style="width: 40%;">
+                <img src="https://bwd2022.vercel.app/assets/vku.png" alt="VKU LOGO">
+            </figure>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/description-product.js"></script>
+</body>
+
+</html>
