@@ -85,63 +85,6 @@ document.head.appendChild(slidingTagLiAfterStyle);
 
     });
 
-
-
-
-    btnNavType4.addEventListener('mouseover' , function()
-    {
-      temp_name = this.classList[1];
-        pageNav2.classList.add('show');
-        slidingTagLiAfterStyle.innerHTML =
- `.header__nav-list-item-type4::after{
-    content: "";
-    position: absolute;
-    border: 5px solid black;
-    right: 42%;
-    border-color: #3B945E transparent transparent  transparent;
-    top: 100%;
-    border-width: 12px 16px;
-    cursor: pointer;
-}`;
-document.head.appendChild(slidingTagLiAfterStyle);
-
-    });
-
-    btnNavType4.addEventListener('mouseout' , function()
-    {
-        
-        pageNav2.classList.remove('show');
-        document.head.removeChild(slidingTagLiAfterStyle);
-
-    });
-
-    btnNavType5.addEventListener('mouseover' , function()
-    {
-        temp_name = this.classList[1];
-        pageNav3.classList.add('show');
-        slidingTagLiAfterStyle.innerHTML =
- `.header__nav-list-item-type5::after{
-    content: "";
-    position: absolute;
-    border: 5px solid black;
-    right: 42%;
-    border-color: #3B945E transparent transparent  transparent;
-    top: 100%;
-    border-width: 12px 16px;
-    cursor: pointer;
-}`;
-document.head.appendChild(slidingTagLiAfterStyle);
-
-    });
-
-    btnNavType5.addEventListener('mouseout' , function()
-    {
-        pageNav3.classList.remove('show');
-        document.head.removeChild(slidingTagLiAfterStyle);
-
-    });
-
-
  pageNav.addEventListener('mouseover' , function()
 {   
     var string = temp_name;

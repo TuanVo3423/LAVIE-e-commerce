@@ -58,24 +58,12 @@
         right: 10px
     }
     
-    /* .header__nav-list {
-        display: none;
-    }
-    .header__top-title{
-        margin: 0;
-    }
-    .header-wrap{
-        margin: 0;
-    }
-    .header__top-nav-icon-left{
-        margin: 0;
-    }
-    .is-mb{
+    .login-common-container{
+        display: flex;
         flex-direction: column;
+       
     }
-    .title-center{
-        display: inline-flex;
-    } */
-        
-    
+    .new-account{
+        width: 100%;
+    }
 } 
