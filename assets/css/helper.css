@@ -28,15 +28,15 @@
   /* Color button */
   .color-button {
     width: 100%;    
-    color: #fff;
+    color : rgb(81,207,102);
     font-weight: 400;
     text-align: center;
-    box-shadow: 3px 3px 0 #edecbe;
+    box-shadow: 3px 3px 0 #17e25e;
     border : none;
     cursor: pointer;
     position: relative;
     text-transform: uppercase;
-    background-color:#14d735;
+    background-color:#fff;
     padding: 1rem 2rem;
   
     overflow: hidden;
@@ -54,7 +54,7 @@
     right: 0;
     bottom: 0;
     height: 100%;
-    background: #e0ee21;
+    background: #18c652;
     z-index: 10;
     width: 200%;
     transform: translate3D(-50%,0,0) rotate(-50deg);

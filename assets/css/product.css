@@ -142,7 +142,8 @@
   
   .product-form-button {
     margin: 25px 0 20px 0;
-    width: 50%;
+    padding: 5px;
+    width: 56%;
     color: rgb(81, 207, 102);
     font-weight: 400;
     text-align: center;
@@ -174,7 +175,7 @@
     right: 0;
     bottom: 0;
     height: 100%;
-    background: #eae34e;
+    background: #4eea70;
     z-index: 10;
     width: 200%;
     transform: translate3D(-50%, 0, 0) rotate(-50deg);
@@ -203,7 +204,7 @@
     width: 100%;
     max-width: 95%;
     margin: 0 auto;
-    background: linear-gradient(to right, #8cd0e3 0, #f08ccd 100%);
+    background: linear-gradient(to right, #0f7d3d 0, #5fed5d 100%);
     padding: 1px 0;
   }
   

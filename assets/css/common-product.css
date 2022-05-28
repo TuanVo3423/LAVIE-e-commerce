@@ -1,6 +1,6 @@
 /* start common product */
 .common-category-wrap {
-    background-color: #d3f9d8;
+    background-color: #e0f2e3;
   }
   
   .product-main-common {
@@ -15,13 +15,13 @@
   }
   
   .list-item-common {
-    background-color: #d3f9d8;
+    background-color: #e0f2e3;
     flex-wrap: wrap;
     justify-content: center;
   }
   
   .product-item-common {
-    background-color: #d3f9d8;
+    background-color: #e0f2e3;
     width: 23.5%;
     margin: 8px;
   }

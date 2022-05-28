@@ -66,4 +66,15 @@
     .new-account{
         width: 100%;
     }
+    .content-slider .color-button{
+        width: 100%;
+    }
+    .content-header{
+        font-size: 30px !important;
+        color: #000;
+      }
+      .content p{
+        font-size: 16px;
+        color: rgb(30, 35, 31);
+      }
 } 
