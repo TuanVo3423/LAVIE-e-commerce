@@ -27,11 +27,15 @@
     position: relative;
 }
 .panel-header{
+    font-size: 17px;
+    font-weight: 600;
     background-color: transparent;
     padding: 0;
 }
 .panel-header h3{
     margin-bottom: 12px;
+    font-size: 17px;
+    font-weight: 600;
 }
 .panel-header .new-account-intro{
     margin-bottom: 18px;
@@ -53,7 +57,7 @@
     width: 100%;
     height: 1px;
     background: #8cd0e3;
-    background: linear-gradient(to right,#8cd0e3 0,#f08ccd 100%);
+    background: linear-gradient(to right,#f6f6f6 0,#0ebd17 100%);
 }
 .new-account-list::after{
     content: '';
@@ -64,7 +68,7 @@
     width: 100%;
     height: 1px;
     background: #8cd0e3;
-    background: linear-gradient(to right,#8cd0e3 0,#f08ccd 100%);
+    background: linear-gradient(to right,#f6f6f6 0,#1bc71e 100%);
 }
 .product-form-register{
     margin: 0;
