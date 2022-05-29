@@ -58,6 +58,8 @@
   .navbar-item{
     color: #fff;
   }
-  
+  .navbar-link:not(.is-arrowless)::after{
+    border-color: #fff !important;
+  }
   
   

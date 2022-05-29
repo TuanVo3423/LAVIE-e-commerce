@@ -22,6 +22,9 @@
  .header__top-title span{
    font-size:12px;
  }
+ .header__top-title a{
+   color: #fff;
+ }
  .header__top-title h1{
    font-size: 46px;
    font-weight: 600;
