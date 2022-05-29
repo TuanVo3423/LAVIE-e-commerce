@@ -5,7 +5,7 @@
     height: auto;
     width: 100%;
     background: #d3f9d8;
-    background: linear-gradient(to bottom,#d3f9d8 0,#51cf66 100%);
+    background: linear-gradient(to bottom,rgb(224, 242, 227) 0,#6de181 100%);
     position: relative;
     margin: 30px auto;
 }
@@ -64,6 +64,7 @@
 
 .twin-tout-content {
     background-color: #efdc7e;
+    background: linear-gradient(to bottom,rgb(245, 245, 242) 0,rgb(229 245 36)  100%);
     padding: 13px 38px 24px;
     text-align: center;
     position: relative;
@@ -177,6 +178,7 @@
 }
 
 .buttonfx:after, .buttonfx:before {
+    
     content: '';
     position: absolute;
     left: 0;
@@ -185,7 +187,8 @@
     bottom: 0;
     height: 100%;
     color: rgb(81, 207, 102);
-    background: rgb(211, 249, 216);
+    /* background: rgb(211, 249, 216); */
+    background:rgb(209, 226, 25);
     z-index: -1;
     transform: translate3D(0,-100%,0);
     transition: all .5s;

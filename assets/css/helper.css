@@ -27,23 +27,23 @@
   
   /* Color button */
   .color-button {
-    width: 100%;    
-    color : rgb(81,207,102);
+    width: 100%;
+    color:#000;
     font-weight: 400;
     text-align: center;
     box-shadow: 3px 3px 0 #17e25e;
-    border : none;
+    border: none;
     cursor: pointer;
     position: relative;
     text-transform: uppercase;
-    background-color:#fff;
+    background-color: #b1e8ae;
     padding: 1rem 2rem;
-  
     overflow: hidden;
   }
   
   .color-button:hover::after {
     transform: translate3D(0, 0, 0);
+    
   }
   
   .color-button::after {
@@ -54,7 +54,9 @@
     right: 0;
     bottom: 0;
     height: 100%;
+    
     background: #18c652;
+    /* background: #35e00f; */
     z-index: 10;
     width: 200%;
     transform: translate3D(-50%,0,0) rotate(-50deg);
