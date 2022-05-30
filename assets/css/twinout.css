@@ -81,10 +81,7 @@
     }
 }
 .bliss-filter-selector .sort-view, .twin-tout-content h3 {
-    font-weight: 500!important;
-}
-.bliss-filter-selector .sort-view, .twin-tout-content h3 {
-    font-weight: 500!important;
+    font-weight: 900!important;
 }
 .bliss-filter-selector .sort-view, .slick-next::before, .slick-prev::before, .twin-tout-content h3 {
     font-family: CeraStencilPRO;
