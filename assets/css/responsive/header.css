@@ -91,4 +91,7 @@
       strong{
           font-size: 8px;
       }
+      .toolbar-search{
+          display: none;
+      }
 } 
