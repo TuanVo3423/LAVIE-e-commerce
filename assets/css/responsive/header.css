@@ -94,4 +94,7 @@
       .toolbar-search{
           display: none;
       }
+      .tabs{
+          overflow-x: hidden;
+      }
 } 
