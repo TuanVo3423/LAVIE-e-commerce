@@ -23,6 +23,13 @@
     .n1{
         display: none !important;
     }
+    .product-item-common{
+        width: 47%;
+    }
+    .header__nav-list-item{
+        margin: 0;
+    }
+    
     
 }
 @media (max-width : 739px)
@@ -58,7 +65,6 @@
         top: 28px;
         right: 10px
     }
-    
     .login-common-container{
         display: flex;
         flex-direction: column;
@@ -77,5 +83,12 @@
       .content p{
         font-size: 16px;
         color: rgb(30, 35, 31);
+      }
+      .product-footer-title{
+          font-size: 14px;
+          line-height: 20px;
+      }
+      strong{
+          font-size: 8px;
       }
 } 

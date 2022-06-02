@@ -551,9 +551,9 @@
                                             <strong>FREE SHIPPING</strong>
                                         </p>
                                         <p>
-                                            ( on
-                                            <span>orders over $40</span>
-                                            )
+                                        
+                                            <!-- <span>Orders over $4</span> -->
+                                
                                         </p>
                                     </div>
                                 </li>
@@ -565,9 +565,9 @@
                                         <p>
                                             <strong>FREE SHIPPING</strong>
                                         </p>
-                                        <p>
-                                            FREE SAMPLES
-                                        </p>
+                                        <!-- <p>
+                                            Free examples
+                                        </p> -->
                                     </div>
                                 </li>
                                 <li class="product-footer-item">
@@ -578,9 +578,9 @@
                                         <p>
                                             <strong>SURPRISES</strong>
                                         </p>
-                                        <p>
-                                            (You will love. Trust.)
-                                        </p>
+                                            <!-- <p>
+                                                (You will love.)
+                                            </p> -->
                                     </div>
                                 </li>
                             </ul>
@@ -838,13 +838,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script>
-            bulmaCarousel.attach('#slider', {
+            bulmaCarousel.attach('#slider',{
                 slidesToScroll: 1,
                 slidesToShow: 4,
                 infinite: true,
                 variableWidth: true,
                 autoplay: true,
-                autoplaySpeed: 1000
+                autoplaySpeed: 1500,
+                breakpoints : [{ changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+                 { changePoint: 820, slidesToShow: 2, slidesToScroll: 1 },
+                  { changePoint: 1023, slidesToShow: 4, slidesToScroll: 1}]
             });
             
         </script>
