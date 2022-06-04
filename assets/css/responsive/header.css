@@ -34,6 +34,10 @@
 }
 @media (max-width : 739px)
 {
+    /* slide */
+    .hero-slide{
+        height: 315px;
+    }
     .header__top-list-icon{
         display: none;
     }
