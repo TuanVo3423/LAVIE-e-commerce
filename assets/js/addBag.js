@@ -102,7 +102,7 @@ boxCartHeader.innerHTML = htmlsOfHeader;
 function remove(x){
     // var removeDiv = document.querySelector('.item-remove');
     var parentRemove = x.parentElement.parentElement.parentElement;
-    var n = Number(parentRemove.getAttribute('index'));
+    var n = Number(parentRemove.getAttribute('index')); // 1
     console.log(listSaveProduct,n)
     numberOfItem--;
     var numberOfProduct = numberOfItem;
@@ -111,12 +111,16 @@ function remove(x){
     boxCartHeader.innerHTML = htmlsOfHeader;
     var numberSpan = document.querySelector('.icon-bag-decorate');
     numberSpan.textContent = numberOfProduct;
-   
-    listSaveProduct.splice(`${n}`, 1);
+     console.log(listSaveProduct)
+     var i = listIndex.indexOf(n);
+     if(i !== -1){
+         listIndex.splice(i,1);
+     }
+     listSaveProduct.splice(i, 1);  
     var temp2 = listSaveProduct.reduce(function(total,curr){
         return total + curr.price;
     },0);
-     console.log(listSaveProduct)
+     console.log(listIndex)
     var total = document.querySelector('.nav-cart-total');
     total.innerHTML = `<span>Subtotals: </span>
                         <span>$${temp2}</span>`;
