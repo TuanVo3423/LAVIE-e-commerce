@@ -93,5 +93,8 @@
     animation: ModalFaceIn 0.6s;
 
   }
+  .no-after::after{
+    content: none;
+  }
   
   
