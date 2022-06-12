@@ -70,18 +70,19 @@
     background: #8cd0e3;
     background: linear-gradient(to right,#f6f6f6 0,#1bc71e 100%);
 }
+.product-form-login,
 .product-form-register{
     margin: 0;
     width: 31%;
     padding: 20px 0;
 }
 .panel-body-form-password,
-.panel-body-form-email{
+.panel-body-form-username{
     display: block;
     margin: 0 0 2rem;
     max-width: none;
 }.panel-body-form-password-input,
-.panel-body-form-email-input{
+.panel-body-form-username-input{
     background-color: #fff;
     border-color: #e31c79;
     border-color: #ccc;
@@ -97,7 +98,7 @@
     transition: border-color .1s ease-out;
     width: 100%;
 }
-.form-field--error .panel-body-form-email-input{
+.form-field--error .panel-body-form-username-input{
     border-color: #e31c79;
     float: none;
 }
@@ -105,12 +106,12 @@
     border-color: #e31c79;
     float: none;
 }
-.form-field--error .Login--error-mess-email,
+.form-field--error .Login--error-mess-userName,
 .form-field--error .Login--error-mess-password{
     color: #e31c79;
 }
 .Login--error-mess-password,
-.Login--error-mess-email{
+.Login--error-mess-userName{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,30 +127,3 @@
     display: block;
     margin: 17px 0 0 0;
 }
-/* .new-account-register{
-    color: #fff;
-    outline: 0;
-    background: 0 0!important;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: none;
-    border-radius: 0;
-    box-shadow: 3px 3px 0 #f5ea77;
-    text-transform: uppercase;
-    line-height: 2;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all .5s;
-    z-index: 1;
-}
-.new-account-register::before{
-    background: #8cd0e3;
-    z-index: -2;
-    transform: translate3D(0,0,0);
-}
-.new-account-register::after{
-    width: 200%;
-    transform-origin: 0 bottom;
-    transform: translate3D(-50%,0,0) rotate(-50deg);
-} */

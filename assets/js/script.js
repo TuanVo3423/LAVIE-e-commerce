@@ -12,7 +12,6 @@
     var pageNav = document.getElementById('Page');
     var pageNav1 = document.getElementById('Page1');
      var pageNav2 = document.getElementById('Page2');
-    // var pageNav3 = document.getElementById('Page3');
     var slidingTagLiAfterStyle = document.createElement("style");
     var btnMenu = document.querySelector('.menu');
     var menuTab = document.querySelector('.n1');
@@ -305,3 +304,6 @@ try {
     })
 
 } catch {}
+
+
+

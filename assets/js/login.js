@@ -1,24 +1,23 @@
-
-var lineEmail = document.querySelector('.panel-body-form-email-input');
-var EmailForm = document.querySelector('.panel-body-form-email');
+var lineuserName = document.querySelector('.panel-body-form-username-input');
 var linePassword = document.querySelector('.panel-body-form-password-input');
+var UserNameForm = document.querySelector('.panel-body-form-username');
 var passWordForm = document.querySelector('.panel-body-form-password');
-var messErrorEmail = document.querySelector('.Login--error-mess-email')
-var messErrorPassword = document.querySelector('.Login--error-mess-password')
-lineEmail.addEventListener('input' , function(e){
-    if(!e.target.value.includes('@gmail.co'))
-    {
-        EmailForm.classList.add('form-field--error')
-        messErrorEmail.style.display = 'flex'
-    }
-});
-lineEmail.addEventListener('input' , function(e){
-    if(e.target.value.includes('@gmail.co'))
-    {
-        EmailForm.classList.remove('form-field--error')
-        messErrorEmail.style.display = 'none'
-    }
-});
+var messErrorUserName = document.querySelector('.Login--error-mess-userName');
+var messErrorPassword = document.querySelector('.Login--error-mess-password');
+// lineEmail.addEventListener('input' , function(e){
+//     if(!e.target.value.includes('@gmail.co'))
+//     {
+//         EmailForm.classList.add('form-field--error')
+//         messErrorEmail.style.display = 'flex'
+//     }
+// });
+// lineEmail.addEventListener('input' , function(e){
+//     if(e.target.value.includes('@gmail.co'))
+//     {
+//         EmailForm.classList.remove('form-field--error')
+//         messErrorEmail.style.display = 'none'
+//     }
+// });
 linePassword.addEventListener('input' , function(e){
     if(e.target.value === "")
     {
@@ -35,6 +34,24 @@ linePassword.addEventListener('input' , function(e){
         
     }
 });
+lineuserName.addEventListener('input' , function(e){
+    if(e.target.value === "")
+    {
+        UserNameForm.classList.add('form-field--error')
+        messErrorUserName.style.display = 'flex'
+    }
+});
+lineuserName.addEventListener('input' , function(e){
+    console.log(e.target.value)
+    if(!e.target.value === "")
+    {
+        UserNameForm.classList.remove('form-field--error')
+        messErrorUserName.style.display = 'none'
+        
+    }
+});
+
+
 
 
 
@@ -45,7 +62,7 @@ var Modal = document.querySelector('#modal-search')
 var btnSearch = document.getElementById('search')
 var formSearch = document.getElementById('search-tab-down')
 var btnNavType2 = document.querySelector('.header__nav-list-item-type2')
- var btnNavType3 = document.querySelector('.header__nav-list-item-type3')
+var btnNavType3 = document.querySelector('.header__nav-list-item-type3')
 var btnNavType4 = document.querySelector('.header__nav-list-item-type4')
 var btnNavType5 = document.querySelector('.header__nav-list-item-type5')
 var pageNav = document.getElementById('Page');

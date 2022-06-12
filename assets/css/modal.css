@@ -1,0 +1,114 @@
+.modal{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    animation: ModalFaceIn 0.6s;
+    z-index: 130;
+}
+.modal.open{
+    display: flex;
+}
+@keyframes ModalFaceIn{
+    from{
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+.modal-main{
+    width: 600px;
+    max-width: calc(100% - 32px);
+    min-height: 300px;
+    position: relative;
+    background-color: #fff;
+   
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 30px;
+}
+.modal-close:hover{
+    color: #000;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.modal-header{
+    background-color: #29c465;
+    color: #fff;
+    /* text-align: center;
+    line-height: 130px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 130px;
+    
+}
+.modal-body{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    
+    
+}
+.lable-shopping{
+    display: block;
+    margin-bottom: 15px;
+}
+.lable-send-to{
+    display: block;
+}
+
+#modal-input1,
+#modal-input2,
+#modal-input3{
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+    margin-bottom: 22px;
+    
+}
+.lable-send-to{
+    margin-bottom: 15px;
+}
+.modal-button{
+    width: 100%;
+    background-color: #29c465;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    padding: 16px 16px;
+}
+.modal-button:hover{
+    color: #000;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.modal-footer .modal-help{
+    text-align: right;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+}
+.underline-help:hover{
+    color: #2196F3;
+    font-size: 15px;
+}
