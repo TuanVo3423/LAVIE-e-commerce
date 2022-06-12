@@ -58,9 +58,13 @@ function ThemVaoGioHang(e){
     
     total.innerHTML = `<span>Subtotals: </span>
                         <span>$${temp}</span>`;
-   
-    
-
+    Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Add to cart successfully',
+    showConfirmButton: false,
+    timer: 1500
+    });
 }
 function renderCartlist(){
     var numberOfProduct = numberOfItem;
