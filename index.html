@@ -24,8 +24,8 @@
         <link rel="stylesheet" href="assets/css/common-product.css">
         <link rel="stylesheet" href="assets/css/twinout.css">
         <link rel="stylesheet" href="assets/css/responsive/header.css">
+        <link rel="stylesheet" href="assets/css/modal.css">
     </head>
-
     <body>
         <div class="background-dark is-hidden"></div>
 
@@ -810,7 +810,7 @@
             <div class="color-divide"></div>
 
             <div class="nav-cart-checkout">
-                <button class="color-button">
+                <button id="checkoutBTN" onclick="checkout()" class="color-button">
                     <span>checkout</span>
                     <span class="color-button-text">checkout</span>
                 </button>
@@ -831,6 +831,26 @@
             </figure>
             </div>
         </div>
+    </div>
+    <div id="modalcheckout" class="modal js-modal">
+        <div class="modal-main js-modal-main">
+            <div  class="modal-close ti-close js-close-btn"></div>
+            <div class="modal-header">
+                <i class="ti-bag"></i> CHECKOUT
+            </div>
+            <div class="modal-body">
+                <label class="lable-shopping" for="modal-input1"><i class="ti-shopping-cart"></i>YOUR NAME</label>
+                <input type="text" id="modal-input1" placeholder="Enter your name">
+                <label class="lable-send-to" for="modal-input2"><i class="ti-user"></i>YOUR ADDRESS</label>
+                <input id="modal-input2" type="text" placeholder="Enter your address">
+                <label class="lable-send-to" for="modal-input2"><i class="ti-user"></i>YOUR PHONE NUMBER</label>
+                <input id="modal-input3" type="text" placeholder="enter your phone number">
+                <label class="lable-send-to" for="modal-input2"><i class="ti-user"></i>TOTAL<span id="checkPrice" style="float: right;">$</span></label>
+                
+                <button id="checkoutAction" class="modal-button">CHECKOUT <i class="ti-check"></i></button>
+            </div>
+        </div>
+    
     </div>
 
 <!--       Bulma carousel js -->
