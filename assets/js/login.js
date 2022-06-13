@@ -4,20 +4,6 @@ var UserNameForm = document.querySelector('.panel-body-form-username');
 var passWordForm = document.querySelector('.panel-body-form-password');
 var messErrorUserName = document.querySelector('.Login--error-mess-userName');
 var messErrorPassword = document.querySelector('.Login--error-mess-password');
-// lineEmail.addEventListener('input' , function(e){
-//     if(!e.target.value.includes('@gmail.co'))
-//     {
-//         EmailForm.classList.add('form-field--error')
-//         messErrorEmail.style.display = 'flex'
-//     }
-// });
-// lineEmail.addEventListener('input' , function(e){
-//     if(e.target.value.includes('@gmail.co'))
-//     {
-//         EmailForm.classList.remove('form-field--error')
-//         messErrorEmail.style.display = 'none'
-//     }
-// });
 linePassword.addEventListener('input' , function(e){
     if(e.target.value === "")
     {

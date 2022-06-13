@@ -1,5 +1,5 @@
-var modal = document.querySelector('.modal');
 
+var modal = document.querySelector('.modal');
 function closeModal(e){
     event.preventDefault();
     modal.classList.remove('open');
@@ -9,6 +9,7 @@ function openModal(e){
     event.preventDefault();
     modal.classList.add('open');
 }
+
 function Register(){
     var usernameInput = document.querySelector('#modal-input1').value;
     var usernamePassword = document.querySelector('#modal-input2').value;
@@ -28,6 +29,7 @@ function Login(e){
     var userPasslogin = document.querySelector('.panel-body-form-password-input').value;
     var userlogin = localStorage.getItem(userNameLogin);
     var data = JSON.parse(userlogin);
+    
     if(data==null){
         Swal.fire({
             position: 'center',
@@ -61,8 +63,20 @@ function Login(e){
   }
 });
 }
-return data;
+else{
+  Swal.fire({
+    position: 'center',
+    icon: 'error',
+    title: 'Please enter correct user name and password',
+    showConfirmButton: false,
+    timer: 2000
+  })
+}
 };
+
+
+
+
 
 
 
