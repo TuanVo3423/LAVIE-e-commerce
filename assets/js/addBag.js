@@ -12,7 +12,7 @@ var listProduct = [
     {
         name : 'Water bottles',
         price : 2,
-        img : "./assets/img/chai/chai1.png"
+        img : "assets/img/chai/chai1.png"
     },
     {
         name : 'Sugarane bait cup',
@@ -25,9 +25,9 @@ var listProduct = [
         img : "assets/img/ly/ly1.jpg"
     },
     {
-        name : 'Water bottles',
-        price : 2,
-        img : "./assets/img/chai/chai1.png"
+        name : 'Canvas',
+        price : 10,
+        img : "assets/img/túi/túi vải/túi vải 1.png"
     },
     {
         name : 'PLA paper cups',
@@ -35,9 +35,9 @@ var listProduct = [
         img : "assets/img/lyPLA/lyPLA1.jpg"
     },
     {
-        name : 'Sugarane bait cup',
-        price : 3,
-        img : "assets/img/cocbamia/cocbamia1.jpg"
+        name : 'Bamboo cup',
+        price : 6,
+        img : "assets/img/cocbamia/coc-nuoc-bang-tre.jpg"
     },
 ];
 function getCurrentProductByID(numberID){
