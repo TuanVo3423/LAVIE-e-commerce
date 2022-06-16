@@ -73,7 +73,6 @@ function renderCartlist(){
     numberSpan.textContent = numberOfProduct;
     var htmlsOfHeader = `<h3>Shopping Bag</h3>
                     <p>(${numberOfProduct} items)</p>`
-    // console.log(indexOfAddTab)
     var htmls = listSaveProduct.map(function(product,index){
         return `<div index = "${listIndex[index]}" class="nav-cart-list-item">
         <div class="item-image-wrapper">
@@ -86,15 +85,15 @@ function renderCartlist(){
             <p class="item-description">Hot</p>
             <div class="item-option is-flex is-align-items-center">
                 <div class="item-amount">
-                    <span>-</span>
-                    <span>1</span>
-                    <span>+</span>
+                    <span id="minus" onclick= minusPrice(this)>-</span>
+                    <span id="numberCurrent">1</span>
+                    <span id="plus" onclick =plusPrice(this)>+</span>
                 </div>
                 <div  onclick = "remove(this)" class="item-remove is-size-7">
                     <span">Remove</span>
                 </div>
                 <div class="item-price is-size-7">
-                    <span>$${product.price}</span>
+                    $<span class="price-item">${product.price}</span>
                 </div>
             </div>
         </div>
@@ -128,7 +127,7 @@ function remove(x){
     var total = document.querySelector('.nav-cart-total');
     total.innerHTML = `<span>Subtotals: </span>
                         <span>$${temp2}</span>`;
-                        console.log(temp2)
+                        // console.log(temp2)
                         this.renderCartlist();
 }
 function checkout(){
@@ -156,3 +155,45 @@ function checkout(){
           })
     }
 }
+
+function plusPrice(x){
+    var parentFirst = x.parentElement;
+    var priceItem = parentFirst.parentElement.childNodes[5].childNodes[1];
+    var numberCurr = parentFirst.childNodes[3];
+    var valueOfnumberCurr = Number.parseInt(numberCurr.textContent) + 1; // nhap thi no se update so luong len // 2
+    numberCurr.textContent = valueOfnumberCurr; // set so luong lai cho no
+    var parent = x.parentElement.parentElement.parentElement.parentElement;
+    const DEFAULTPRICE = listProduct[parent.getAttribute("index")].price;
+    priceItem.textContent = DEFAULTPRICE * valueOfnumberCurr;
+    var Totalprice = document.querySelector('.nav-cart-total span:nth-child(2)');
+    console.log(Totalprice) // 7 // 15
+    var valueTotal = Number.parseInt(Totalprice.textContent.replace('$', '')) + DEFAULTPRICE;
+    Totalprice.textContent ='$'+ valueTotal; //15
+    
+   
+}
+
+function minusPrice(x){
+    var parentFirst = x.parentElement;
+    var priceItem = parentFirst.parentElement.childNodes[5].childNodes[1];
+    var numberCurr = parentFirst.childNodes[3];
+    var valueOfnumberCurr = Number.parseInt(numberCurr.textContent) - 1; // nhap thi no se update so luong len // 2
+    if(valueOfnumberCurr<=0){
+        Swal.fire({
+            text: 'Product quantity must be positive!',
+            icon : 'info',
+            confirmButtonColor: '#29c465'
+        })
+        valueOfnumberCurr = 1;
+    }
+    else{
+        numberCurr.textContent = valueOfnumberCurr;
+        var parent = x.parentElement.parentElement.parentElement.parentElement;
+        const DEFAULTPRICE = listProduct[parent.getAttribute("index")].price;
+        priceItem.textContent = DEFAULTPRICE * valueOfnumberCurr;
+        var Totalprice = document.querySelector('.nav-cart-total span:nth-child(2)');
+        var valueTotal = Number.parseInt(Totalprice.textContent.replace('$', '')) - DEFAULTPRICE;
+        Totalprice.textContent ='$'+ valueTotal; 
+    }
+}
+
