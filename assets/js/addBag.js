@@ -5,9 +5,6 @@ var listSaveProduct = [];
 var listIndex = [];
 var numberOfItem = 0;
 var temp2;
-
-
-
 var listProduct = [
     {
         name : 'Water bottles',
@@ -56,7 +53,6 @@ function ThemVaoGioHang(e){
     var temp = listSaveProduct.reduce(function(total,curr){
         return total + curr.price;
     },0);
-    
     total.innerHTML = `<span>Subtotals: </span>
                         <span>$${temp}</span>`;
     Swal.fire({
@@ -155,7 +151,6 @@ function checkout(){
           })
     }
 }
-
 function plusPrice(x){
     var parentFirst = x.parentElement;
     var priceItem = parentFirst.parentElement.childNodes[5].childNodes[1];
@@ -169,10 +164,7 @@ function plusPrice(x){
     console.log(Totalprice) // 7 // 15
     var valueTotal = Number.parseInt(Totalprice.textContent.replace('$', '')) + DEFAULTPRICE;
     Totalprice.textContent ='$'+ valueTotal; //15
-    
-   
 }
-
 function minusPrice(x){
     var parentFirst = x.parentElement;
     var priceItem = parentFirst.parentElement.childNodes[5].childNodes[1];

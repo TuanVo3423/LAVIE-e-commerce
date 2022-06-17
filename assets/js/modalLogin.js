@@ -3,13 +3,11 @@ var modal = document.querySelector('.modal');
 function closeModal(e){
     event.preventDefault();
     modal.classList.remove('open');
-    
 }
 function openModal(e){
     event.preventDefault();
     modal.classList.add('open');
 }
-
 function Register(){
     var usernameInput = document.querySelector('#modal-input1').value;
     var usernamePassword = document.querySelector('#modal-input2').value;
