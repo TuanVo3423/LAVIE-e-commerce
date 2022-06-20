@@ -36,6 +36,37 @@ var listProduct = [
         price : 6,
         img : "assets/img/cocbamia/coc-nuoc-bang-tre.jpg"
     },
+    {
+        name : 'Water bottles',
+        price : 22,
+        img : "assets/img/chai/chai1.png"
+    },
+    {
+        name : 'Sugarane bait cup',
+        price : 9,
+        img : "assets/img/cocbamia/cocbamia1.jpg"
+    },
+    {
+        name : 'Paper cup',
+        price : 10,
+        img : "assets/img/ly/ly1.jpg"
+    },
+    {
+        name : 'PLA paper cups',
+        price : 12,
+        img : "assets/img/lyPLA/lyPLA1.jpg"
+    },
+    {
+        name : 'Canvas',
+        price : 20,
+        img : "assets/img/túi/túi vải/túi vải 1.png"
+    },
+    {
+        name : 'PET bags',
+        price : 22,
+        img : "assets/img/túi/túi đay/túi\ đay.png"
+    }
+    
 ];
 function getCurrentProductByID(numberID){
     return listProduct[numberID];
