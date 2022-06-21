@@ -92,8 +92,19 @@
    display: block;
  }
  #logo-login-sucessfully{
+  
    display: none;
  }
+ #logOutcomponent{
+  display: none;
+ }
+ /* #logo-login-sign-out{
+  display: none ;
+ }
+ #LogOutTile{
+  display: none;
+ } */
+
  .icon{
    display: block;
    position: relative;
