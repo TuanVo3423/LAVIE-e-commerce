@@ -1,5 +1,5 @@
 
-var user = localStorage.getItem('TuanVo');
+var user = localStorage.getItem('account');
 var data = JSON.parse(user);
 if(data == null){
     

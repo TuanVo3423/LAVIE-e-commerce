@@ -9,24 +9,26 @@ function openModal(e){
     modal.classList.add('open');
 }
 function Register(){
+    var keyuser = "account"
     var usernameInput = document.querySelector('#modal-input1').value;
     var usernamePassword = document.querySelector('#modal-input2').value;
     var usernamePasswordConfirm = document.querySelector('#modal-input3').value;
     var user = {
+        key : keyuser,
         username : usernameInput,
         userpass : usernamePassword,
         userconfirm : usernamePasswordConfirm
     };
     var json = JSON.stringify(user);
-    localStorage.setItem(usernameInput,json);
+    localStorage.setItem(keyuser,json);
     closeModal();
 }
 function Login(e){
     event.preventDefault();
     var userNameLogin = document.querySelector('.panel-body-form-username-input').value;
     var userPasslogin = document.querySelector('.panel-body-form-password-input').value;
-    var userlogin = localStorage.getItem(userNameLogin);
-    var data = JSON.parse(userlogin);
+    var userkey = localStorage.getItem("account");
+    var data = JSON.parse(userkey);
     
     if(data==null){
         Swal.fire({
